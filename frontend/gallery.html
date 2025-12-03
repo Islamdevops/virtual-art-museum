@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Musée d'Art</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🖼️ Galerie d'Art</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="gallery.html">Galerie</a>
+            <div id="auth-buttons"></div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="filters">
+            <select id="artist-filter">
+                <option value="">Tous les artistes</option>
+            </select>
+            <select id="century-filter">
+                <option value="">Tous les siècles</option>
+            </select>
+        </div>
+
+        <div class="gallery-grid" id="artworks-grid">
+            <div class="artwork-card" data-id="1">
+                <img src="https://via.placeholder.com/300x200/cccccc/666666?text=La+Joconde" alt="La Joconde">
+                <h3>La Joconde</h3>
+                <p>Léonard de Vinci</p>
+                <p>XVIe siècle</p>
+            </div>
+            <div class="artwork-card" data-id="2">
+                <img src="https://via.placeholder.com/300x200/cccccc/666666?text=La+Nuit+étoilée" alt="La Nuit étoilée">
+                <h3>La Nuit étoilée</h3>
+                <p>Vincent van Gogh</p>
+                <p>XIXe siècle</p>
+            </div>
+        </div>
+
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div id="lightbox-info"></div>
+            <div id="comments-section">
+                <h4>Commentaires</h4>
+                <div id="comments-list"></div>
+                <textarea id="comment-input" placeholder="Ajouter un commentaire..."></textarea>
+                <button id="submit-comment">Publier</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/gallery.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/comments.js"></script>
+</body>
+</html>
