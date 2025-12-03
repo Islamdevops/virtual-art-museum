@@ -1,1 +1,93 @@
-/* Responsive */
+/* responsive.css - Media queries mobile-first */
+
+/* Tablettes et + (min-width: 600px) */
+@media (min-width: 600px) {
+  .container {
+    padding: 24px;
+  }
+
+  /* Galerie 2 colonnes */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .art-image {
+    height: 260px;
+  }
+
+  .art-meta {
+    padding: 16px 20px;
+  }
+
+  header.header {
+    padding: 18px 24px;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .hero {
+    padding: 32px;
+  }
+
+  .hero .title {
+    font-size: 2rem;
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1260px;
+    padding: 32px;
+  }
+
+  /* Galerie 4 colonnes */
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px;
+  }
+
+  .art-card {
+    min-height: 320px;
+  }
+
+  .art-image {
+    height: 220px;
+  }
+
+  .art-meta {
+    padding: 20px 24px;
+  }
+
+  header.header {
+    padding: 22px 32px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .brand {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 10px 18px;
+  }
+
+  .hero .title {
+    font-size: 2.4rem;
+  }
+}
+
+/* Très petits écrans (max-width: 359px) */
+@media (max-width: 359px) {
+  .brand {
+    font-size: 1.1rem;
+  }
+
+  .hero .title {
+    font-size: 1.5rem;
+  }
+
+  .art-image {
+    height: 180px;
+  }
+}
